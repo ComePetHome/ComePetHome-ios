@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E418D4922B47BDD200C4ADC5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4912B47BDD200C4ADC5 /* SearchBar.swift */; };
+		E418D4942B47C00200C4ADC5 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4932B47C00200C4ADC5 /* View+.swift */; };
+		E418D4962B47F74300C4ADC5 /* TemporaryProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4952B47F74300C4ADC5 /* TemporaryProtectionView.swift */; };
+		E418D4982B47F77C00C4ADC5 /* RealTimeReportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4972B47F77C00C4ADC5 /* RealTimeReportingView.swift */; };
+		E418D49A2B47F79900C4ADC5 /* AdoptionReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4992B47F79900C4ADC5 /* AdoptionReviewView.swift */; };
+		E418D49C2B47F7C400C4ADC5 /* LookingforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D49B2B47F7C400C4ADC5 /* LookingforView.swift */; };
+		E465DF502B44FAD300D89E1F /* AnimalFreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF4F2B44FAD300D89E1F /* AnimalFreeView.swift */; };
+		E465DF532B4502C100D89E1F /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF522B4502C100D89E1F /* CGFloat+.swift */; };
+		E465DF552B454C6300D89E1F /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF542B454C6300D89E1F /* AnimalDetailView.swift */; };
+		E465DF572B46437000D89E1F /* ShelterMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF562B46437000D89E1F /* ShelterMapView.swift */; };
+		E465DF592B4677FA00D89E1F /* AnimalYoutubeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF582B4677FA00D89E1F /* AnimalYoutubeWebView.swift */; };
+		E4700D222B3AAE34003DB586 /* ComePetHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D212B3AAE34003DB586 /* ComePetHomeApp.swift */; };
+		E4700D242B3AAE34003DB586 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D232B3AAE34003DB586 /* HomeView.swift */; };
+		E4700D262B3AAE35003DB586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4700D252B3AAE35003DB586 /* Assets.xcassets */; };
+		E4700D292B3AAE35003DB586 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4700D282B3AAE35003DB586 /* Preview Assets.xcassets */; };
+		E4700D332B3AAE35003DB586 /* ComePetHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D322B3AAE35003DB586 /* ComePetHomeTests.swift */; };
+		E4700D3D2B3AAE35003DB586 /* ComePetHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D3C2B3AAE35003DB586 /* ComePetHomeUITests.swift */; };
+		E4700D3F2B3AAE35003DB586 /* ComePetHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D3E2B3AAE35003DB586 /* ComePetHomeUITestsLaunchTests.swift */; };
+		E4700D5C2B3AB129003DB586 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D5B2B3AB129003DB586 /* Font+.swift */; };
+		E4700D5E2B3AB355003DB586 /* TextMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D5D2B3AB355003DB586 /* TextMaster.swift */; };
+		E4700D6C2B3AB935003DB586 /* The Jamsil 1 Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4700D6B2B3AB935003DB586 /* The Jamsil 1 Thin.ttf */; };
+		E4700D6E2B3AB93A003DB586 /* The Jamsil 6 ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4700D6D2B3AB93A003DB586 /* The Jamsil 6 ExtraBold.ttf */; };
+		E4700D702B3AB976003DB586 /* The Jamsil 2 Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4700D6F2B3AB976003DB586 /* The Jamsil 2 Light.ttf */; };
+		E4700D722B3AB97B003DB586 /* The Jamsil 3 Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4700D712B3AB97B003DB586 /* The Jamsil 3 Regular.ttf */; };
+		E4700D742B3AB97E003DB586 /* The Jamsil 4 Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4700D732B3AB97E003DB586 /* The Jamsil 4 Medium.ttf */; };
+		E4700D762B3AB983003DB586 /* The Jamsil 5 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4700D752B3AB983003DB586 /* The Jamsil 5 Bold.ttf */; };
+		E4700D792B3AC42A003DB586 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D782B3AC42A003DB586 /* MainTabBarView.swift */; };
+		E4700D7B2B3AC464003DB586 /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D7A2B3AC464003DB586 /* NoticeView.swift */; };
+		E4700D7D2B3AC470003DB586 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D7C2B3AC470003DB586 /* SearchView.swift */; };
+		E4700D7F2B3AC47D003DB586 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D7E2B3AC47D003DB586 /* MyPageView.swift */; };
+		E4700D822B3AC874003DB586 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D812B3AC874003DB586 /* PetViewModel.swift */; };
+		E4700D842B3AC8A9003DB586 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4700D832B3AC8A9003DB586 /* Animal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4700D2F2B3AAE35003DB586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4700D162B3AAE34003DB586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4700D1D2B3AAE34003DB586;
+			remoteInfo = ComePetHome;
+		};
+		E4700D392B3AAE35003DB586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4700D162B3AAE34003DB586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4700D1D2B3AAE34003DB586;
+			remoteInfo = ComePetHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E418D4912B47BDD200C4ADC5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E418D4932B47C00200C4ADC5 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		E418D4952B47F74300C4ADC5 /* TemporaryProtectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryProtectionView.swift; sourceTree = "<group>"; };
+		E418D4972B47F77C00C4ADC5 /* RealTimeReportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeReportingView.swift; sourceTree = "<group>"; };
+		E418D4992B47F79900C4ADC5 /* AdoptionReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptionReviewView.swift; sourceTree = "<group>"; };
+		E418D49B2B47F7C400C4ADC5 /* LookingforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingforView.swift; sourceTree = "<group>"; };
+		E465DF4F2B44FAD300D89E1F /* AnimalFreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFreeView.swift; sourceTree = "<group>"; };
+		E465DF522B4502C100D89E1F /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
+		E465DF542B454C6300D89E1F /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
+		E465DF562B46437000D89E1F /* ShelterMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterMapView.swift; sourceTree = "<group>"; };
+		E465DF582B4677FA00D89E1F /* AnimalYoutubeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalYoutubeWebView.swift; sourceTree = "<group>"; };
+		E4700D1E2B3AAE34003DB586 /* ComePetHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComePetHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4700D212B3AAE34003DB586 /* ComePetHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComePetHomeApp.swift; sourceTree = "<group>"; };
+		E4700D232B3AAE34003DB586 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E4700D252B3AAE35003DB586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4700D282B3AAE35003DB586 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4700D2E2B3AAE35003DB586 /* ComePetHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComePetHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4700D322B3AAE35003DB586 /* ComePetHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComePetHomeTests.swift; sourceTree = "<group>"; };
+		E4700D382B3AAE35003DB586 /* ComePetHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComePetHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4700D3C2B3AAE35003DB586 /* ComePetHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComePetHomeUITests.swift; sourceTree = "<group>"; };
+		E4700D3E2B3AAE35003DB586 /* ComePetHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComePetHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4700D5B2B3AB129003DB586 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		E4700D5D2B3AB355003DB586 /* TextMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMaster.swift; sourceTree = "<group>"; };
+		E4700D5F2B3AB40A003DB586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E4700D6B2B3AB935003DB586 /* The Jamsil 1 Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Jamsil 1 Thin.ttf"; sourceTree = "<group>"; };
+		E4700D6D2B3AB93A003DB586 /* The Jamsil 6 ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Jamsil 6 ExtraBold.ttf"; sourceTree = "<group>"; };
+		E4700D6F2B3AB976003DB586 /* The Jamsil 2 Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Jamsil 2 Light.ttf"; sourceTree = "<group>"; };
+		E4700D712B3AB97B003DB586 /* The Jamsil 3 Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Jamsil 3 Regular.ttf"; sourceTree = "<group>"; };
+		E4700D732B3AB97E003DB586 /* The Jamsil 4 Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Jamsil 4 Medium.ttf"; sourceTree = "<group>"; };
+		E4700D752B3AB983003DB586 /* The Jamsil 5 Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Jamsil 5 Bold.ttf"; sourceTree = "<group>"; };
+		E4700D782B3AC42A003DB586 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		E4700D7A2B3AC464003DB586 /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		E4700D7C2B3AC470003DB586 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E4700D7E2B3AC47D003DB586 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		E4700D812B3AC874003DB586 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		E4700D832B3AC8A9003DB586 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4700D1B2B3AAE34003DB586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4700D2B2B3AAE35003DB586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4700D352B3AAE35003DB586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4700D152B3AAE34003DB586 = {
+			isa = PBXGroup;
+			children = (
+				E4700D772B3AB9A5003DB586 /* Font */,
+				E4700D202B3AAE34003DB586 /* ComePetHome */,
+				E4700D312B3AAE35003DB586 /* ComePetHomeTests */,
+				E4700D3B2B3AAE35003DB586 /* ComePetHomeUITests */,
+				E4700D1F2B3AAE34003DB586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4700D1F2B3AAE34003DB586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D1E2B3AAE34003DB586 /* ComePetHome.app */,
+				E4700D2E2B3AAE35003DB586 /* ComePetHomeTests.xctest */,
+				E4700D382B3AAE35003DB586 /* ComePetHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4700D202B3AAE34003DB586 /* ComePetHome */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D5F2B3AB40A003DB586 /* Info.plist */,
+				E4700D212B3AAE34003DB586 /* ComePetHomeApp.swift */,
+				E4700D4F2B3AB039003DB586 /* View */,
+				E4700D802B3AC815003DB586 /* Model */,
+				E4700D852B3ACDB2003DB586 /* ViewModel */,
+				E4700D522B3AB08C003DB586 /* Resource */,
+				E4700D5A2B3AB110003DB586 /* Extension */,
+				E4700D502B3AB042003DB586 /* Commons */,
+				E4700D252B3AAE35003DB586 /* Assets.xcassets */,
+				E4700D272B3AAE35003DB586 /* Preview Content */,
+			);
+			path = ComePetHome;
+			sourceTree = "<group>";
+		};
+		E4700D272B3AAE35003DB586 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D282B3AAE35003DB586 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4700D312B3AAE35003DB586 /* ComePetHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D322B3AAE35003DB586 /* ComePetHomeTests.swift */,
+			);
+			path = ComePetHomeTests;
+			sourceTree = "<group>";
+		};
+		E4700D3B2B3AAE35003DB586 /* ComePetHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D3C2B3AAE35003DB586 /* ComePetHomeUITests.swift */,
+				E4700D3E2B3AAE35003DB586 /* ComePetHomeUITestsLaunchTests.swift */,
+			);
+			path = ComePetHomeUITests;
+			sourceTree = "<group>";
+		};
+		E4700D4B2B3AAEB4003DB586 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D232B3AAE34003DB586 /* HomeView.swift */,
+				E465DF4F2B44FAD300D89E1F /* AnimalFreeView.swift */,
+				E465DF542B454C6300D89E1F /* AnimalDetailView.swift */,
+				E465DF562B46437000D89E1F /* ShelterMapView.swift */,
+				E465DF582B4677FA00D89E1F /* AnimalYoutubeWebView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E4700D4C2B3AAEBE003DB586 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D7E2B3AC47D003DB586 /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		E4700D4D2B3AAEC2003DB586 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D7C2B3AC470003DB586 /* SearchView.swift */,
+				E418D4912B47BDD200C4ADC5 /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E4700D4E2B3AAEC6003DB586 /* NoticeBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D7A2B3AC464003DB586 /* NoticeView.swift */,
+				E418D4952B47F74300C4ADC5 /* TemporaryProtectionView.swift */,
+				E418D4972B47F77C00C4ADC5 /* RealTimeReportingView.swift */,
+				E418D49B2B47F7C400C4ADC5 /* LookingforView.swift */,
+				E418D4992B47F79900C4ADC5 /* AdoptionReviewView.swift */,
+			);
+			path = NoticeBoard;
+			sourceTree = "<group>";
+		};
+		E4700D4F2B3AB039003DB586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D782B3AC42A003DB586 /* MainTabBarView.swift */,
+				E4700D4B2B3AAEB4003DB586 /* Home */,
+				E4700D4E2B3AAEC6003DB586 /* NoticeBoard */,
+				E4700D4D2B3AAEC2003DB586 /* Search */,
+				E4700D4C2B3AAEBE003DB586 /* MyPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4700D502B3AB042003DB586 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D5D2B3AB355003DB586 /* TextMaster.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		E4700D522B3AB08C003DB586 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E4700D5A2B3AB110003DB586 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D5B2B3AB129003DB586 /* Font+.swift */,
+				E465DF522B4502C100D89E1F /* CGFloat+.swift */,
+				E418D4932B47C00200C4ADC5 /* View+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E4700D772B3AB9A5003DB586 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D752B3AB983003DB586 /* The Jamsil 5 Bold.ttf */,
+				E4700D732B3AB97E003DB586 /* The Jamsil 4 Medium.ttf */,
+				E4700D712B3AB97B003DB586 /* The Jamsil 3 Regular.ttf */,
+				E4700D6F2B3AB976003DB586 /* The Jamsil 2 Light.ttf */,
+				E4700D6D2B3AB93A003DB586 /* The Jamsil 6 ExtraBold.ttf */,
+				E4700D6B2B3AB935003DB586 /* The Jamsil 1 Thin.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E4700D802B3AC815003DB586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D832B3AC8A9003DB586 /* Animal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4700D852B3ACDB2003DB586 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4700D812B3AC874003DB586 /* PetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4700D1D2B3AAE34003DB586 /* ComePetHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4700D422B3AAE35003DB586 /* Build configuration list for PBXNativeTarget "ComePetHome" */;
+			buildPhases = (
+				E4700D1A2B3AAE34003DB586 /* Sources */,
+				E4700D1B2B3AAE34003DB586 /* Frameworks */,
+				E4700D1C2B3AAE34003DB586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComePetHome;
+			productName = ComePetHome;
+			productReference = E4700D1E2B3AAE34003DB586 /* ComePetHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4700D2D2B3AAE35003DB586 /* ComePetHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4700D452B3AAE35003DB586 /* Build configuration list for PBXNativeTarget "ComePetHomeTests" */;
+			buildPhases = (
+				E4700D2A2B3AAE35003DB586 /* Sources */,
+				E4700D2B2B3AAE35003DB586 /* Frameworks */,
+				E4700D2C2B3AAE35003DB586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4700D302B3AAE35003DB586 /* PBXTargetDependency */,
+			);
+			name = ComePetHomeTests;
+			productName = ComePetHomeTests;
+			productReference = E4700D2E2B3AAE35003DB586 /* ComePetHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4700D372B3AAE35003DB586 /* ComePetHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4700D482B3AAE35003DB586 /* Build configuration list for PBXNativeTarget "ComePetHomeUITests" */;
+			buildPhases = (
+				E4700D342B3AAE35003DB586 /* Sources */,
+				E4700D352B3AAE35003DB586 /* Frameworks */,
+				E4700D362B3AAE35003DB586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4700D3A2B3AAE35003DB586 /* PBXTargetDependency */,
+			);
+			name = ComePetHomeUITests;
+			productName = ComePetHomeUITests;
+			productReference = E4700D382B3AAE35003DB586 /* ComePetHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4700D162B3AAE34003DB586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E4700D1D2B3AAE34003DB586 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					E4700D2D2B3AAE35003DB586 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E4700D1D2B3AAE34003DB586;
+					};
+					E4700D372B3AAE35003DB586 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E4700D1D2B3AAE34003DB586;
+					};
+				};
+			};
+			buildConfigurationList = E4700D192B3AAE34003DB586 /* Build configuration list for PBXProject "ComePetHome" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4700D152B3AAE34003DB586;
+			productRefGroup = E4700D1F2B3AAE34003DB586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4700D1D2B3AAE34003DB586 /* ComePetHome */,
+				E4700D2D2B3AAE35003DB586 /* ComePetHomeTests */,
+				E4700D372B3AAE35003DB586 /* ComePetHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4700D1C2B3AAE34003DB586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4700D292B3AAE35003DB586 /* Preview Assets.xcassets in Resources */,
+				E4700D262B3AAE35003DB586 /* Assets.xcassets in Resources */,
+				E4700D6C2B3AB935003DB586 /* The Jamsil 1 Thin.ttf in Resources */,
+				E4700D702B3AB976003DB586 /* The Jamsil 2 Light.ttf in Resources */,
+				E4700D722B3AB97B003DB586 /* The Jamsil 3 Regular.ttf in Resources */,
+				E4700D742B3AB97E003DB586 /* The Jamsil 4 Medium.ttf in Resources */,
+				E4700D762B3AB983003DB586 /* The Jamsil 5 Bold.ttf in Resources */,
+				E4700D6E2B3AB93A003DB586 /* The Jamsil 6 ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4700D2C2B3AAE35003DB586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4700D362B3AAE35003DB586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4700D1A2B3AAE34003DB586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4700D7B2B3AC464003DB586 /* NoticeView.swift in Sources */,
+				E418D4982B47F77C00C4ADC5 /* RealTimeReportingView.swift in Sources */,
+				E418D4962B47F74300C4ADC5 /* TemporaryProtectionView.swift in Sources */,
+				E4700D822B3AC874003DB586 /* PetViewModel.swift in Sources */,
+				E418D49C2B47F7C400C4ADC5 /* LookingforView.swift in Sources */,
+				E4700D7F2B3AC47D003DB586 /* MyPageView.swift in Sources */,
+				E4700D792B3AC42A003DB586 /* MainTabBarView.swift in Sources */,
+				E465DF552B454C6300D89E1F /* AnimalDetailView.swift in Sources */,
+				E418D4942B47C00200C4ADC5 /* View+.swift in Sources */,
+				E418D4922B47BDD200C4ADC5 /* SearchBar.swift in Sources */,
+				E465DF532B4502C100D89E1F /* CGFloat+.swift in Sources */,
+				E418D49A2B47F79900C4ADC5 /* AdoptionReviewView.swift in Sources */,
+				E4700D5E2B3AB355003DB586 /* TextMaster.swift in Sources */,
+				E465DF572B46437000D89E1F /* ShelterMapView.swift in Sources */,
+				E4700D7D2B3AC470003DB586 /* SearchView.swift in Sources */,
+				E4700D5C2B3AB129003DB586 /* Font+.swift in Sources */,
+				E4700D242B3AAE34003DB586 /* HomeView.swift in Sources */,
+				E4700D222B3AAE34003DB586 /* ComePetHomeApp.swift in Sources */,
+				E465DF502B44FAD300D89E1F /* AnimalFreeView.swift in Sources */,
+				E4700D842B3AC8A9003DB586 /* Animal.swift in Sources */,
+				E465DF592B4677FA00D89E1F /* AnimalYoutubeWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4700D2A2B3AAE35003DB586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4700D332B3AAE35003DB586 /* ComePetHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4700D342B3AAE35003DB586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4700D3D2B3AAE35003DB586 /* ComePetHomeUITests.swift in Sources */,
+				E4700D3F2B3AAE35003DB586 /* ComePetHomeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4700D302B3AAE35003DB586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4700D1D2B3AAE34003DB586 /* ComePetHome */;
+			targetProxy = E4700D2F2B3AAE35003DB586 /* PBXContainerItemProxy */;
+		};
+		E4700D3A2B3AAE35003DB586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4700D1D2B3AAE34003DB586 /* ComePetHome */;
+			targetProxy = E4700D392B3AAE35003DB586 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4700D402B3AAE35003DB586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4700D412B3AAE35003DB586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4700D432B3AAE35003DB586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComePetHome/Preview Content\"";
+				DEVELOPMENT_TEAM = Q45H5LWRR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComePetHome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ComePetHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E4700D442B3AAE35003DB586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComePetHome/Preview Content\"";
+				DEVELOPMENT_TEAM = Q45H5LWRR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComePetHome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ComePetHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E4700D462B3AAE35003DB586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q45H5LWRR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ComePetHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComePetHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComePetHome";
+			};
+			name = Debug;
+		};
+		E4700D472B3AAE35003DB586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q45H5LWRR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ComePetHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComePetHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComePetHome";
+			};
+			name = Release;
+		};
+		E4700D492B3AAE35003DB586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q45H5LWRR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ComePetHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComePetHome;
+			};
+			name = Debug;
+		};
+		E4700D4A2B3AAE35003DB586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q45H5LWRR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ComePetHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComePetHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4700D192B3AAE34003DB586 /* Build configuration list for PBXProject "ComePetHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4700D402B3AAE35003DB586 /* Debug */,
+				E4700D412B3AAE35003DB586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4700D422B3AAE35003DB586 /* Build configuration list for PBXNativeTarget "ComePetHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4700D432B3AAE35003DB586 /* Debug */,
+				E4700D442B3AAE35003DB586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4700D452B3AAE35003DB586 /* Build configuration list for PBXNativeTarget "ComePetHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4700D462B3AAE35003DB586 /* Debug */,
+				E4700D472B3AAE35003DB586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4700D482B3AAE35003DB586 /* Build configuration list for PBXNativeTarget "ComePetHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4700D492B3AAE35003DB586 /* Debug */,
+				E4700D4A2B3AAE35003DB586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4700D162B3AAE34003DB586 /* Project object */;
+}
