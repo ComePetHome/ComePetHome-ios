@@ -9,10 +9,20 @@ import SwiftUI
 
 struct NoticeBoradWrite: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("게시판 작성글/댓글")
+                    .font(Font.TheJamsilMedium16)
+            }
+        }
     }
 }
 
 #Preview {
-    NoticeBoradWrite()
+    NavigationStack {
+        NoticeBoradWrite()
+    }
 }
