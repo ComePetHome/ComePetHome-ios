@@ -38,22 +38,15 @@ struct AnimalFreeView: View {
                 }
                 Spacer()
                 Text("\(animalName)")
-                    .font(.TheJamsilRegular14)
+                    .font(.TheJamsilBold14)
                     .foregroundStyle(Color("FontBlackWhiteColor"))
                     .multilineTextAlignment(.leading)
-                if animalSex == "M" {
-                    Text("\(animalAge.replacingOccurrences(of: "[()]", with: "", options: .regularExpression))/수컷")
-                        .font(.TheJamsilRegular14)
-                        .foregroundStyle(Color("FontBlackWhiteColor"))
-                        .multilineTextAlignment(.leading)
-                } else {
-                    Text("\(animalAge.replacingOccurrences(of: "[()]", with: "", options: .regularExpression))/암컷")
-                        .font(.TheJamsilRegular14)
-                        .foregroundStyle(Color("FontBlackWhiteColor"))
-                        .multilineTextAlignment(.leading)
-                }
+                Text(animalSex == "M" ? "\(animalAge.replacingOccurrences(of: "[()]", with: "", options: .regularExpression))/수컷" : "\(animalAge.replacingOccurrences(of: "[()]", with: "", options: .regularExpression))/암컷")
+                    .font(.TheJamsilLight14)
+                    .foregroundStyle(Color("FontBlackWhiteColor"))
+                    .multilineTextAlignment(.leading)
                 Text("\(animalCenter)")
-                    .font(.TheJamsilRegular14)
+                    .font(.TheJamsilLight14)
                     .foregroundStyle(Color("FontBlackWhiteColor"))
                     .multilineTextAlignment(.leading)
                 Spacer()
