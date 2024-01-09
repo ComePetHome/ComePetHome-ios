@@ -13,6 +13,18 @@
 		E418D4982B47F77C00C4ADC5 /* RealTimeReportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4972B47F77C00C4ADC5 /* RealTimeReportingView.swift */; };
 		E418D49A2B47F79900C4ADC5 /* AdoptionReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4992B47F79900C4ADC5 /* AdoptionReviewView.swift */; };
 		E418D49C2B47F7C400C4ADC5 /* LookingforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D49B2B47F7C400C4ADC5 /* LookingforView.swift */; };
+		E418D49F2B4B8F4600C4ADC5 /* LogInMyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D49E2B4B8F4600C4ADC5 /* LogInMyPageView.swift */; };
+		E418D4A12B4B8F9F00C4ADC5 /* LogOutMyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4A02B4B8F9F00C4ADC5 /* LogOutMyPageView.swift */; };
+		E418D4A42B4B937800C4ADC5 /* EditMyInformaitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4A32B4B937800C4ADC5 /* EditMyInformaitionView.swift */; };
+		E418D4A62B4B939100C4ADC5 /* LikeAnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4A52B4B939100C4ADC5 /* LikeAnimalView.swift */; };
+		E418D4A82B4B93F000C4ADC5 /* NoticeBoradWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4A72B4B93F000C4ADC5 /* NoticeBoradWrite.swift */; };
+		E418D4AA2B4BAAA900C4ADC5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4A92B4BAAA900C4ADC5 /* CustomTextField.swift */; };
+		E418D4AD2B4C106000C4ADC5 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4AC2B4C106000C4ADC5 /* LogInView.swift */; };
+		E418D4AF2B4C108B00C4ADC5 /* SignUpIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4AE2B4C108B00C4ADC5 /* SignUpIdView.swift */; };
+		E418D4B12B4C10A400C4ADC5 /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B02B4C10A400C4ADC5 /* SignUpPasswordView.swift */; };
+		E418D4B32B4C10B700C4ADC5 /* SignUpNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B22B4C10B700C4ADC5 /* SignUpNicknameView.swift */; };
+		E418D4B52B4C10D700C4ADC5 /* SignUpNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B42B4C10D700C4ADC5 /* SignUpNameView.swift */; };
+		E418D4B72B4C10FE00C4ADC5 /* SignUpPhonenumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B62B4C10FE00C4ADC5 /* SignUpPhonenumView.swift */; };
 		E465DF502B44FAD300D89E1F /* AnimalFreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF4F2B44FAD300D89E1F /* AnimalFreeView.swift */; };
 		E465DF532B4502C100D89E1F /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF522B4502C100D89E1F /* CGFloat+.swift */; };
 		E465DF552B454C6300D89E1F /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465DF542B454C6300D89E1F /* AnimalDetailView.swift */; };
@@ -65,6 +77,18 @@
 		E418D4972B47F77C00C4ADC5 /* RealTimeReportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeReportingView.swift; sourceTree = "<group>"; };
 		E418D4992B47F79900C4ADC5 /* AdoptionReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptionReviewView.swift; sourceTree = "<group>"; };
 		E418D49B2B47F7C400C4ADC5 /* LookingforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingforView.swift; sourceTree = "<group>"; };
+		E418D49E2B4B8F4600C4ADC5 /* LogInMyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMyPageView.swift; sourceTree = "<group>"; };
+		E418D4A02B4B8F9F00C4ADC5 /* LogOutMyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutMyPageView.swift; sourceTree = "<group>"; };
+		E418D4A32B4B937800C4ADC5 /* EditMyInformaitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyInformaitionView.swift; sourceTree = "<group>"; };
+		E418D4A52B4B939100C4ADC5 /* LikeAnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimalView.swift; sourceTree = "<group>"; };
+		E418D4A72B4B93F000C4ADC5 /* NoticeBoradWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoradWrite.swift; sourceTree = "<group>"; };
+		E418D4A92B4BAAA900C4ADC5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E418D4AC2B4C106000C4ADC5 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		E418D4AE2B4C108B00C4ADC5 /* SignUpIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIdView.swift; sourceTree = "<group>"; };
+		E418D4B02B4C10A400C4ADC5 /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
+		E418D4B22B4C10B700C4ADC5 /* SignUpNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNicknameView.swift; sourceTree = "<group>"; };
+		E418D4B42B4C10D700C4ADC5 /* SignUpNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameView.swift; sourceTree = "<group>"; };
+		E418D4B62B4C10FE00C4ADC5 /* SignUpPhonenumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPhonenumView.swift; sourceTree = "<group>"; };
 		E465DF4F2B44FAD300D89E1F /* AnimalFreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFreeView.swift; sourceTree = "<group>"; };
 		E465DF522B4502C100D89E1F /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		E465DF542B454C6300D89E1F /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
@@ -122,6 +146,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E418D49D2B4B8F1000C4ADC5 /* LogInLogOutView */ = {
+			isa = PBXGroup;
+			children = (
+				E418D49E2B4B8F4600C4ADC5 /* LogInMyPageView.swift */,
+				E418D4A02B4B8F9F00C4ADC5 /* LogOutMyPageView.swift */,
+			);
+			path = LogInLogOutView;
+			sourceTree = "<group>";
+		};
+		E418D4A22B4B92F500C4ADC5 /* MyPageLists */ = {
+			isa = PBXGroup;
+			children = (
+				E418D4A32B4B937800C4ADC5 /* EditMyInformaitionView.swift */,
+				E418D4A52B4B939100C4ADC5 /* LikeAnimalView.swift */,
+				E418D4A72B4B93F000C4ADC5 /* NoticeBoradWrite.swift */,
+			);
+			path = MyPageLists;
+			sourceTree = "<group>";
+		};
+		E418D4AB2B4C104800C4ADC5 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				E418D4AC2B4C106000C4ADC5 /* LogInView.swift */,
+				E418D4BA2B4D123700C4ADC5 /* SignUp */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		E418D4BA2B4D123700C4ADC5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E418D4AE2B4C108B00C4ADC5 /* SignUpIdView.swift */,
+				E418D4B02B4C10A400C4ADC5 /* SignUpPasswordView.swift */,
+				E418D4B22B4C10B700C4ADC5 /* SignUpNicknameView.swift */,
+				E418D4B42B4C10D700C4ADC5 /* SignUpNameView.swift */,
+				E418D4B62B4C10FE00C4ADC5 /* SignUpPhonenumView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		E4700D152B3AAE34003DB586 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				E4700D7E2B3AC47D003DB586 /* MyPageView.swift */,
+				E418D49D2B4B8F1000C4ADC5 /* LogInLogOutView */,
+				E418D4A22B4B92F500C4ADC5 /* MyPageLists */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -230,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				E4700D782B3AC42A003DB586 /* MainTabBarView.swift */,
+				E418D4AB2B4C104800C4ADC5 /* LogIn */,
 				E4700D4B2B3AAEB4003DB586 /* Home */,
 				E4700D4E2B3AAEC6003DB586 /* NoticeBoard */,
 				E4700D4D2B3AAEC2003DB586 /* Search */,
@@ -259,6 +326,7 @@
 				E4700D5B2B3AB129003DB586 /* Font+.swift */,
 				E465DF522B4502C100D89E1F /* CGFloat+.swift */,
 				E418D4932B47C00200C4ADC5 /* View+.swift */,
+				E418D4A92B4BAAA900C4ADC5 /* CustomTextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -429,24 +497,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4700D7B2B3AC464003DB586 /* NoticeView.swift in Sources */,
+				E418D4B52B4C10D700C4ADC5 /* SignUpNameView.swift in Sources */,
 				E418D4982B47F77C00C4ADC5 /* RealTimeReportingView.swift in Sources */,
+				E418D4A62B4B939100C4ADC5 /* LikeAnimalView.swift in Sources */,
 				E418D4962B47F74300C4ADC5 /* TemporaryProtectionView.swift in Sources */,
+				E418D4A82B4B93F000C4ADC5 /* NoticeBoradWrite.swift in Sources */,
+				E418D49F2B4B8F4600C4ADC5 /* LogInMyPageView.swift in Sources */,
 				E4700D822B3AC874003DB586 /* PetViewModel.swift in Sources */,
 				E418D49C2B47F7C400C4ADC5 /* LookingforView.swift in Sources */,
+				E418D4AA2B4BAAA900C4ADC5 /* CustomTextField.swift in Sources */,
 				E4700D7F2B3AC47D003DB586 /* MyPageView.swift in Sources */,
 				E4700D792B3AC42A003DB586 /* MainTabBarView.swift in Sources */,
+				E418D4B12B4C10A400C4ADC5 /* SignUpPasswordView.swift in Sources */,
 				E465DF552B454C6300D89E1F /* AnimalDetailView.swift in Sources */,
 				E418D4942B47C00200C4ADC5 /* View+.swift in Sources */,
+				E418D4AF2B4C108B00C4ADC5 /* SignUpIdView.swift in Sources */,
+				E418D4A12B4B8F9F00C4ADC5 /* LogOutMyPageView.swift in Sources */,
 				E418D4922B47BDD200C4ADC5 /* SearchBar.swift in Sources */,
 				E465DF532B4502C100D89E1F /* CGFloat+.swift in Sources */,
 				E418D49A2B47F79900C4ADC5 /* AdoptionReviewView.swift in Sources */,
 				E4700D5E2B3AB355003DB586 /* TextMaster.swift in Sources */,
+				E418D4B72B4C10FE00C4ADC5 /* SignUpPhonenumView.swift in Sources */,
 				E465DF572B46437000D89E1F /* ShelterMapView.swift in Sources */,
 				E4700D7D2B3AC470003DB586 /* SearchView.swift in Sources */,
+				E418D4B32B4C10B700C4ADC5 /* SignUpNicknameView.swift in Sources */,
 				E4700D5C2B3AB129003DB586 /* Font+.swift in Sources */,
 				E4700D242B3AAE34003DB586 /* HomeView.swift in Sources */,
+				E418D4AD2B4C106000C4ADC5 /* LogInView.swift in Sources */,
 				E4700D222B3AAE34003DB586 /* ComePetHomeApp.swift in Sources */,
 				E465DF502B44FAD300D89E1F /* AnimalFreeView.swift in Sources */,
+				E418D4A42B4B937800C4ADC5 /* EditMyInformaitionView.swift in Sources */,
 				E4700D842B3AC8A9003DB586 /* Animal.swift in Sources */,
 				E465DF592B4677FA00D89E1F /* AnimalYoutubeWebView.swift in Sources */,
 			);
