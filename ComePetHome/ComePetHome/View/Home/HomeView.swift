@@ -12,6 +12,12 @@ struct HomeView: View {
     @ObservedObject var petViewModel = PetViewModel()
     var body: some View {
         NavigationStack {
+            if petViewModel.pets.isEmpty {
+                Spacer()
+                ProgressView("동물들의 정보를 불러오는 중 입니다")
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding([.top],.screenHeight/3)
+            }
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
                     ForEach(petViewModel.pets, id: \.pet_id) { pet in
