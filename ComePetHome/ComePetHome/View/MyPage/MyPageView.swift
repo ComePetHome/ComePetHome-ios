@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct MyPageView: View {
+    var isLogin = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if isLogin {
+                LogInMyPageView()
+            } else {
+                LogOutMyPageView()
+            }
+        } .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image(uiImage: UIImage(named: "ComePetHomeLogo")!)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                       
+                    } label: {
+                        Image(systemName: "gearshape")
+                            .foregroundStyle(Color.gray)
+                    }
+                }
+            }
     }
 }
 
 #Preview {
-    MyPageView()
+    NavigationStack {
+        MyPageView()
+    }
 }

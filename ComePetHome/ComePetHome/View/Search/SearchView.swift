@@ -34,7 +34,6 @@ struct SearchView: View {
                         .padding([.top], -20)
                         .padding()
                         if petViewModel.searchedPets.isEmpty {
-                            
                             Image("NoSearchResultImage")
                         }
                     }

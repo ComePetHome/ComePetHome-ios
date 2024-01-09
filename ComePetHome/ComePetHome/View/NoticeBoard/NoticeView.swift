@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NoticeView: View {
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     @State private var selectedNumber: Int = 0
     var body: some View {
         NavigationStack {
@@ -17,7 +18,7 @@ struct NoticeView: View {
                 } label: {
                     Text("임시보호")
                         .font(.TheJamsilExtraBold14)
-                        .foregroundStyle(selectedNumber == 0 ? Color("AccentColor") : Color.gray)
+                        .foregroundStyle(colorScheme == .light ? (selectedNumber == 0 ? Color("AccentColor") : Color.gray) : (selectedNumber == 0 ? Color.white : Color.white.opacity(0.5)))
                         .frame(width: .screenWidth * 0.21, height: .screenWidth * 0.08)
                         .background(Color("MainColor"))
                         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -27,7 +28,7 @@ struct NoticeView: View {
                 } label: {
                     Text("실시간 제보")
                         .font(.TheJamsilExtraBold14)
-                        .foregroundStyle(selectedNumber == 1 ? Color("AccentColor") : Color.gray)
+                        .foregroundStyle(colorScheme == .light ? (selectedNumber == 1 ? Color("AccentColor") : Color.gray) : (selectedNumber == 1 ? Color.white : Color.white.opacity(0.5)))
                         .frame(width: .screenWidth * 0.21, height: .screenWidth * 0.08)
                         .background(Color("MainColor"))
                         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -37,7 +38,7 @@ struct NoticeView: View {
                 } label: {
                     Text("찾습니다")
                         .font(.TheJamsilExtraBold14)
-                        .foregroundStyle(selectedNumber == 2 ? Color("AccentColor") : Color.gray)
+                        .foregroundStyle(colorScheme == .light ? (selectedNumber == 2 ? Color("AccentColor") : Color.gray) : (selectedNumber == 2 ? Color.white : Color.white.opacity(0.5)))
                         .frame(width: .screenWidth * 0.21, height: .screenWidth * 0.08)
                         .background(Color("MainColor"))
                         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -47,7 +48,7 @@ struct NoticeView: View {
                 } label: {
                     Text("입양후기")
                         .font(.TheJamsilExtraBold14)
-                        .foregroundStyle(selectedNumber == 3 ? Color("AccentColor") : Color.gray)
+                        .foregroundStyle(colorScheme == .light ? (selectedNumber == 3 ? Color("AccentColor") : Color.gray) : (selectedNumber == 3 ? Color.white : Color.white.opacity(0.5)))
                         .frame(width: .screenWidth * 0.21, height: .screenWidth * 0.08)
                         .background(Color("MainColor"))
                         .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -58,7 +59,6 @@ struct NoticeView: View {
             switch selectedNumber {
             case 0:
                 TemporaryProtectionView()
-                
             case 1:
                 RealTimeReportingView()
             case 2:
