@@ -9,7 +9,9 @@ import SwiftUI
 
 struct NoticeView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @ObservedObject var articleViewModel = ArticleViewModel()
     @State private var selectedNumber: Int = 0
+    
     var body: some View {
         NavigationStack {
             HStack {
@@ -56,33 +58,56 @@ struct NoticeView: View {
             }
             .padding([.top], 10)
             Spacer()
+            
             switch selectedNumber {
             case 0:
-                TemporaryProtectionView()
+                ArticleListView(articleList: articleViewModel.temporaryProtectArticle, articleOption: "임시보호")
             case 1:
-                RealTimeReportingView()
+                ArticleListView(articleList: articleViewModel.realTimeReportArticle, articleOption: "실시간 제보")
             case 2:
-                LookingforView()
+                ArticleListView(articleList: articleViewModel.lookingforArticle, articleOption: "찾습니다")
             case 3:
-                AdoptionReviewView()
+                ArticleListView(articleList: articleViewModel.adoptionReviewArticle, articleOption: "입양후기")
             default:
                 Image("NoNoticeImage")
             }
             Spacer()
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Image(uiImage: UIImage(named: "CommunityLogo")!)
-                    }
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "magnifyingglass")
-                                .foregroundStyle(Color.gray)
-                        }
+            HStack {
+                Spacer()
+                NavigationLink {
+                    ArticlePostView()
+                        .toolbar(.hidden, for: .tabBar)
+                } label: {
+                    ZStack {
+                        Image(systemName: "square.and.pencil")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: .screenWidth * 0.1)
+                            .padding()
+                            .background(Color("SubColor"))
+                            .clipShape(RoundedRectangle(cornerRadius: .screenWidth * 0.1))
+                            .foregroundStyle(Color.black)
                     }
                 }
+            }
+            .padding()
+            
+            
+            
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image(uiImage: UIImage(named: "CommunityLogo")!)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundStyle(Color.gray)
+                    }
+                }
+            }
         }
     }
 }
