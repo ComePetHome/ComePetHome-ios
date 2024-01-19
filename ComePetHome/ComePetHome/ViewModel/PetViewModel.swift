@@ -53,30 +53,30 @@ class PetViewModel: ObservableObject {
     }
 }
 
-struct ContentView: View {
-    @ObservedObject var petViewModel = PetViewModel()
-    var body: some View {
-        
-        List(petViewModel.pets, id: \.pet_id) { pet in
-            VStack(alignment: .leading) {
-                Text("Name: \(pet.name)")
-                Text("Center: \(pet.center)")
-                // date의 값이 "yyyy-MM-dd'T'HH:mm:ss.SSSZ"의 형태로 받아지고 있어, 앞에서 10자리를 끊은 날짜 값을 출력한다.
-                Text("Enlistment Date: \(String("\(pet.enlistment_date)".prefix(10)))")
-                Text("Breeds: \(pet.breeds)")
-                Text("Sex: \(pet.sex)")
-                Text("Age: \(pet.age.replacingOccurrences(of: "[()]", with: "", options: .regularExpression))")
-                Text("Adoption Status: \(pet.adp_status)")
-                Text("Like: \(pet.like ? "Yes" : "No")")
-                
-            }
-        }
-        .onAppear {
-            petViewModel.fetchPets()
-        }
-    }
-}
-
-#Preview {
-    ContentView()
-}
+//struct ContentView: View {
+//    @ObservedObject var petViewModel = PetViewModel()
+//    var body: some View {
+//        
+//        List(petViewModel.pets, id: \.pet_id) { pet in
+//            VStack(alignment: .leading) {
+//                Text("Name: \(pet.name)")
+//                Text("Center: \(pet.center)")
+//                // date의 값이 "yyyy-MM-dd'T'HH:mm:ss.SSSZ"의 형태로 받아지고 있어, 앞에서 10자리를 끊은 날짜 값을 출력한다.
+//                Text("Enlistment Date: \(String("\(pet.enlistment_date)".prefix(10)))")
+//                Text("Breeds: \(pet.breeds)")
+//                Text("Sex: \(pet.sex)")
+//                Text("Age: \(pet.age.replacingOccurrences(of: "[()]", with: "", options: .regularExpression))")
+//                Text("Adoption Status: \(pet.adp_status)")
+//                Text("Like: \(pet.like ? "Yes" : "No")")
+//                
+//            }
+//        }
+//        .onAppear {
+//            petViewModel.fetchPets()
+//        }
+//    }
+//}
+//
+//#Preview {
+//    ContentView()
+//}
