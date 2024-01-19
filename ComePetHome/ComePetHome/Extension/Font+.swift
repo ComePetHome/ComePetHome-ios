@@ -23,6 +23,7 @@ extension Font {
     
     
     // Regular
+    static let TheJamsilRegular8: Font = .custom("The Jamsil 3 Regular", size: 8)
     static let TheJamsilRegular10: Font = .custom("The Jamsil 3 Regular", size: 10)
     static let TheJamsilRegular12: Font = .custom("The Jamsil 3 Regular", size: 12)
     static let TheJamsilRegular14: Font = .custom("The Jamsil 3 Regular", size: 14)
@@ -30,10 +31,12 @@ extension Font {
     static let TheJamsilRegular18: Font = .custom("The Jamsil 3 Regular", size: 18)
     
     // Medium
+    static let TheJamsilMedium26: Font = .custom("The Jamsil 4 Medium", size: 26)
     static let TheJamsilMedium24: Font = .custom("The Jamsil 4 Medium", size: 24)
     static let TheJamsilMedium20: Font = .custom("The Jamsil 4 Medium", size: 20)
     static let TheJamsilMedium18: Font = .custom("The Jamsil 4 Medium", size: 18)
     static let TheJamsilMedium16: Font = .custom("The Jamsil 4 Medium", size: 16)
+    static let TheJamsilMedium12: Font = .custom("The Jamsil 4 Medium", size: 12)
     
     
     // Bold
@@ -47,6 +50,7 @@ extension Font {
     static let TheJamsilExtraBold12: Font = .custom("The Jamsil 6 ExtraBold", size: 12)
     static let TheJamsilExtraBold14: Font = .custom("The Jamsil 6 ExtraBold", size: 14)
     static let TheJamsilExtraBold16: Font = .custom("The Jamsil 6 ExtraBold", size: 16)
+    static let TheJamsilExtraBold26: Font = .custom("The Jamsil 6 ExtraBold", size: 26)
     static let TheJamsilExtraBold30: Font = .custom("The Jamsil 6 ExtraBold", size: 30)
     
 }
