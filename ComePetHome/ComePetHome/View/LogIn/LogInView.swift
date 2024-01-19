@@ -13,7 +13,10 @@ struct LogInView: View {
         case userPassword
     }
     @FocusState var focusField: FocusableField?
-    @State var isReturn = false
+    @EnvironmentObject var userViewModel: UserViewModel
+    @State var isSignUpReturn = false
+    @State var isFindIdReturn = false
+    @State var isFindPassReturn = false
     
     @State private var userId: String = ""
     @State private var userPassword: String = ""
@@ -21,6 +24,7 @@ struct LogInView: View {
     @State var isTouchedId = false
     @State var isTouchedPassword = false
     
+    @Binding var isSheet: Bool
     var body: some View {
         NavigationStack {
             Image("SignUpOne")
@@ -101,7 +105,8 @@ struct LogInView: View {
             }
             Spacer()
             Button {
-                
+                userViewModel.getLogin(id: userId, password: userPassword)
+                //isSheet = !userViewModel.isLogin
             } label: {
                 Text("로그인")
                     .font(Font.TheJamsilMedium24)
@@ -113,46 +118,55 @@ struct LogInView: View {
             }
             HStack {
                 Button {
-                    
+                    isFindIdReturn = true
                 } label: {
                     Text("아이디 찾기")
                         .font(Font.TheJamsilRegular14)
                         .foregroundStyle(Color("FontBlackWhiteColor"))
                         .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
                 }
+                .navigationDestination(isPresented: $isFindIdReturn) {
+                    FindMyIdView(isFindIdReturn: $isFindIdReturn)
+                }
                 
                 Divider()
                     .frame(height: 20)
                 
                 Button {
-                    
+                    isFindPassReturn = true
                 } label: {
                     Text("비밀번호 찾기")
                         .font(Font.TheJamsilRegular14)
                         .foregroundStyle(Color("FontBlackWhiteColor"))
                         .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
                 }
+                .navigationDestination(isPresented: $isFindPassReturn) {
+                    FindMyPasswordView(isFindMyPasswordReturn: $isFindPassReturn)
+                }
                 
                 Divider()
                     .frame(height: 20)
                 
                 Button {
-                    isReturn = true
+                    isSignUpReturn = true
                 } label: {
                     Text("회원가입")
                         .font(Font.TheJamsilRegular14)
                         .foregroundStyle(Color("FontBlackWhiteColor"))
                         .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
                 }
-                .navigationDestination(isPresented: $isReturn) {
-                    SignUpIdView(isReturn: $isReturn)
+                .navigationDestination(isPresented: $isSignUpReturn) {
+                    SignUpIdView(isReturn: $isSignUpReturn)
                 }
             }
             .padding(.bottom, .screenHeight * 0.1)
+        }
+        .onChange(of: userViewModel.isLogin) {
+            isSheet = !userViewModel.isLogin
         }
     }
 }
 
 #Preview {
-    LogInView()
+    LogInView(isSheet: .constant(true)).environmentObject(UserViewModel())
 }
