@@ -11,6 +11,7 @@ struct SignUpNameView: View {
     enum FocusableField: Hashable {
         case userName
     }
+    @EnvironmentObject var userViewModel: UserViewModel
     @FocusState var focusField: FocusableField?
     @Binding var isReturn: Bool
     @State private var userName: String = ""
@@ -72,8 +73,11 @@ struct SignUpNameView: View {
             .disabled(userName.isEmpty ? true : false)
             .padding(.bottom, 30)
         }
+        .onDisappear{
+            userViewModel.user.name = userName
+        }
     }
 }
 #Preview {
-    SignUpNameView(isReturn: .constant(true))
+    SignUpNameView(isReturn: .constant(true)).environmentObject(UserViewModel())
 }

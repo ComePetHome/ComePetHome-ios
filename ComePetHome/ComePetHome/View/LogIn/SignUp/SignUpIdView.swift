@@ -11,13 +11,14 @@ struct SignUpIdView: View {
     enum FocusableField: Hashable {
         case userId
     }
+    @EnvironmentObject var userViewModel: UserViewModel
     @FocusState var focusField: FocusableField?
     @Binding var isReturn: Bool
     
     @State private var userId: String = ""
     
     @State var isTouchedId = false
-    
+    @State var tag:Int? = nil
     var body: some View {
         VStack {
             Image("SignUpTwo")
@@ -29,6 +30,9 @@ struct SignUpIdView: View {
                     TextField("아이디", text: self.$userId)
                         .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                         .focused($focusField, equals: .userId)
+                        .onSubmit {
+                            userViewModel.user.userId = userId
+                        }
                     if !userId.isEmpty {
                         Button(action: {
                             self.userId = ""
@@ -55,6 +59,7 @@ struct SignUpIdView: View {
                 switch focusField {
                 case .userId:
                     isTouchedId = true
+                    userViewModel.user.userId = userId
                 case .none:
                     isTouchedId = false
                 }
@@ -73,10 +78,14 @@ struct SignUpIdView: View {
             }
             .disabled(userId.isEmpty ? true : false)
             .padding(.bottom, 30)
+            
+        }
+        .onDisappear{
+            userViewModel.user.userId = userId
         }
     }
 }
 
 #Preview {
-    SignUpIdView(isReturn: .constant(true))
+    SignUpIdView(isReturn: .constant(true)).environmentObject(UserViewModel())
 }

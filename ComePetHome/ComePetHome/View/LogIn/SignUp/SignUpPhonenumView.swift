@@ -12,6 +12,7 @@ struct SignUpPhonenumView: View {
         case userPhoneNum
     }
     @FocusState var focusField: FocusableField?
+    @EnvironmentObject var userViewModel: UserViewModel
     @Binding var isReturn: Bool
     @State private var userPhoneNum: String = ""
     
@@ -60,6 +61,9 @@ struct SignUpPhonenumView: View {
             }
             Spacer()
             Button {
+                userViewModel.user.phoneNumber = userPhoneNum
+                print(userViewModel.user)
+                userViewModel.postSignUp(user: userViewModel.user)
                 isReturn = false
             } label: {
                 Text("완료")
@@ -78,8 +82,9 @@ struct SignUpPhonenumView: View {
                 hideKeyboard()
                 isTouchedPhoneNum = false
             }
+           
     }
 }
 #Preview {
-    SignUpPhonenumView(isReturn: .constant(true))
+    SignUpPhonenumView(isReturn: .constant(true)).environmentObject(UserViewModel())
 }

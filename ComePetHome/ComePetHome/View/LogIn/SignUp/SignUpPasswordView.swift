@@ -12,7 +12,7 @@ struct SignUpPasswordView: View {
         case userPassword
         case userPasswordConfirm
     }
-    
+    @EnvironmentObject var userViewModel: UserViewModel
     @FocusState var focusField: FocusableField?
     @Binding var isReturn: Bool
     
@@ -120,9 +120,12 @@ struct SignUpPasswordView: View {
             .disabled(!userPassword.isEmpty && !userPasswordConfirm.isEmpty && userPassword == userPasswordConfirm ? false : true)
             .padding(.bottom, 30)
         }
+        .onDisappear{
+            userViewModel.user.password = userPassword
+        }
     }
 }
 
 #Preview {
-    SignUpPasswordView(isReturn: .constant(true))
+    SignUpPasswordView(isReturn: .constant(true)).environmentObject(UserViewModel())
 }
