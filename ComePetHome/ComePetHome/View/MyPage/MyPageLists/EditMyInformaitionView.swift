@@ -13,14 +13,16 @@ struct EditMyInformaitionView: View {
         case userId
         case userPhoneNum
     }
-    @State private var userNickName: String = "홍길동"  // 사용자 아이디
-    @State private var userId: String = "hong1234"
-    @State private var userPhoneNum: String = "010-1234-5678"
+    @FocusState var focusField: FocusableField?
+    @EnvironmentObject var userViewModel: UserViewModel
+    @State private var userNickName: String = ""  // 사용자 아이디
+    @State private var userId: String = ""
+    @State private var userPhoneNum: String = ""
     @State var isTouchedNickName = false
     @State var isTouchedId = false
     @State var isTouchedPhoneNum = false
     
-    @FocusState var focusField: FocusableField?
+    
     
     var body: some View {
         VStack {
@@ -49,7 +51,7 @@ struct EditMyInformaitionView: View {
                     .padding([.horizontal], .screenWidth * 0.1)
                     .padding(.bottom, .screenWidth * 0.01)
                 HStack {
-                    TextField(userNickName, text: self.$userNickName, prompt:Text(userNickName).foregroundStyle(Color.black))
+                    TextField(userViewModel.savedUser.nickName, text: self.$userNickName, prompt:Text(userViewModel.savedUser.nickName).foregroundStyle(Color.black))
                         .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                         .focused($focusField, equals: .userNickName)
                     if !userNickName.isEmpty {
@@ -80,7 +82,7 @@ struct EditMyInformaitionView: View {
                     .padding([.horizontal], .screenWidth * 0.1)
                     .padding(.bottom, .screenWidth * 0.01)
                 HStack {
-                    TextField(userId, text: self.$userId, prompt:Text(userId).foregroundStyle(Color.black))
+                    TextField(userViewModel.savedUser.userId, text: self.$userId, prompt:Text(userViewModel.savedUser.userId).foregroundStyle(Color.black))
                         .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                         .focused($focusField, equals: .userId)
                     if !userId.isEmpty {
@@ -112,7 +114,7 @@ struct EditMyInformaitionView: View {
                     .padding([.horizontal], .screenWidth * 0.1)
                     .padding(.bottom, .screenWidth * 0.01)
                 HStack {
-                    TextField(userPhoneNum, text: self.$userPhoneNum, prompt:Text(userPhoneNum).foregroundStyle(Color.black))
+                    TextField(userViewModel.savedUser.phoneNumber, text: self.$userPhoneNum, prompt:Text(userViewModel.savedUser.phoneNumber).foregroundStyle(Color.black))
                         .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                         .focused($focusField, equals: .userPhoneNum)
                     if !userPhoneNum.isEmpty {
@@ -161,7 +163,10 @@ struct EditMyInformaitionView: View {
             }
             Spacer()
             Button {
-                
+                userViewModel.savedUser.nickName = userNickName
+                userViewModel.savedUser.userId = userId
+                userViewModel.savedUser.phoneNumber = userPhoneNum
+                userViewModel.modifyProfile(user: userViewModel.savedUser)
             } label: {
                 Text("수정하기")
                     .font(Font.TheJamsilMedium24)
@@ -212,6 +217,6 @@ struct EditMyInformaitionView: View {
 
 #Preview {
     NavigationStack {
-        EditMyInformaitionView()
+        EditMyInformaitionView().environmentObject(UserViewModel())
     }
 }
