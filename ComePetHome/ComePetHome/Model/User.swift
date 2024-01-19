@@ -6,3 +6,25 @@
 //
 
 import Foundation
+
+struct User: Codable {
+    var userId: String
+    var password: String
+    var nickName: String
+    //var imageUrl: String
+    var name: String
+    var phoneNumber: String
+}
+
+struct Login: Codable {
+    var userId: String
+    var password: String
+}
+
+struct SavedUser: Codable {
+    var userId: String
+    var nickName: String
+    var imageUrl: String
+    var name: String
+    var phoneNumber: String
+}
