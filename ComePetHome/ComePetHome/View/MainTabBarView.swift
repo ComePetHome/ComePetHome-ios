@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainTabBarView: View {
     @State private var selection = 0 // 탭 선택을 추적하기 위한 상태 변수
-
+    @StateObject private var userViewModel = UserViewModel()
     var body: some View {
         TabView(selection: $selection) {
             HomeView()
@@ -39,10 +39,11 @@ struct MainTabBarView: View {
                     Text("마이")
                 }
                 .tag(4)
+                .environmentObject(userViewModel)
         }
     }
 }
 
 #Preview {
-    MainTabBarView()
+    MainTabBarView()//.environmentObject(UserViewModel())
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct ComePetHomeApp: App {
+    
     var body: some Scene {
         WindowGroup {
             MainTabBarView()

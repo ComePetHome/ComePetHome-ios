@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LogInMyPageView: View {
+    @EnvironmentObject var userViewModel: UserViewModel
     var body: some View {
         NavigationStack {
             HStack {
@@ -21,10 +22,10 @@ struct LogInMyPageView: View {
                         .frame(width: .screenWidth * 0.2)
                 }
                 VStack(alignment: .leading) {
-                    Text("홍길동")
+                    Text(userViewModel.savedUser.nickName)
                         .font(.TheJamsilRegular18)
                         .padding(EdgeInsets(top: 0, leading: .screenWidth * 0.1, bottom: .screenWidth * 0.005, trailing: 0))
-                    Text("Hong1234")
+                    Text(userViewModel.savedUser.userId)
                         .font(.TheJamsilRegular14)
                         .padding(EdgeInsets(top: 0, leading: .screenWidth * 0.1, bottom: .screenWidth * 0.005, trailing: 0))
                         .foregroundStyle(Color.black.opacity(0.5))
@@ -84,5 +85,5 @@ struct LogInMyPageView: View {
 }
 
 #Preview {
-    LogInMyPageView()
+    LogInMyPageView().environmentObject(UserViewModel())
 }

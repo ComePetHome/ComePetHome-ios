@@ -30,13 +30,13 @@ struct LogOutMyPageView: View {
             } label: {
                 Text("로그인 하러 가기")
                     .font(.TheJamsilRegular16)
-                    .foregroundStyle(Color.black.opacity(0.5))
+                    .foregroundStyle(Color("FontBlackWhiteColor").opacity(0.5))
                 Image(systemName: "chevron.right")
                     .font(.TheJamsilRegular16)
-                    .foregroundStyle(Color.black.opacity(0.5))
+                    .foregroundStyle(Color("FontBlackWhiteColor").opacity(0.5))
             }
             .sheet(isPresented: $isSheet) {
-                LogInView()
+                LogInView(isSheet: $isSheet)
             }
         }
     }

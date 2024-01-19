@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct MyPageView: View {
-    var isLogin = false
+    var isLogin = true
+    @EnvironmentObject var userViewModel: UserViewModel
     var body: some View {
         VStack {
-            if isLogin {
+            if userViewModel.isLogin == true {
                 LogInMyPageView()
             } else {
                 LogOutMyPageView()
@@ -35,6 +36,6 @@ struct MyPageView: View {
 
 #Preview {
     NavigationStack {
-        MyPageView()
+        MyPageView().environmentObject(UserViewModel())
     }
 }
