@@ -28,7 +28,7 @@ struct FindMyIdView: View {
             HStack {
                 Text("컴팻홈")
                     .font(Font.TheJamsilExtraBold30)
-                    .foregroundStyle(Color("AccentColor"))
+                    .foregroundStyle(Color("PrimaryColor"))
                     .padding(EdgeInsets(top: .screenWidth * 0.05, leading: .screenWidth * 0.1, bottom: 0, trailing: 0))
                 Text("가입 정보로")
                     .font(Font.TheJamsilMedium26)
@@ -57,7 +57,7 @@ struct FindMyIdView: View {
             }
             .overlay {
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(isTouchedName ? Color("AccentColor") : Color.black, lineWidth: 1.5)
+                    .stroke(isTouchedName ? Color("PrimaryColor") : Color.black, lineWidth: 1.5)
                     .frame(height: .screenWidth * 0.14, alignment: .center)
             }
             .frame(height: .screenWidth * 0.1415, alignment: .center)
@@ -87,7 +87,7 @@ struct FindMyIdView: View {
             }
             .overlay {
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(isTouchedPhonenum ? Color("AccentColor") : Color.black, lineWidth: 1.5)
+                    .stroke(isTouchedPhonenum ? Color("PrimaryColor") : Color.black, lineWidth: 1.5)
                     .frame(height: .screenWidth * 0.14, alignment: .center)
             }
             .frame(height: .screenWidth * 0.1415, alignment: .center)
@@ -132,7 +132,7 @@ struct FindMyIdView: View {
                 .font(Font.TheJamsilMedium24)
                 .foregroundStyle(Color.white)
                 .frame(width: .screenWidth * 0.8, height: .screenWidth * 0.13)
-                .background(!userName.isEmpty && !userPhonenum.isEmpty ? Color("AccentColor") : Color("DisableColor"))
+                .background(!userName.isEmpty && !userPhonenum.isEmpty ? Color("PrimaryColor") : Color("DisableColor"))
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
         }
