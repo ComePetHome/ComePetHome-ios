@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Article: Codable {
     var aticleId: Int
     var writer: String
     var wirterImage: String
-    var noticeTitle: String
+    var articleTitle: String
     var ArticleImages: [String]
-    var noticeContent: String
+    var articleContent: String
     var createdAt: Date
     var likeNum: Int
     var articleOption: String
@@ -27,9 +28,11 @@ struct Comment: Codable {
     var commentDate: Date
 }
 
-enum ArticleOption {
-    case temporaryProtection
-    case realTiemReport
-    case lookingfor
-    case adoptionReview
+enum ArticleOption: String, CaseIterable {
+    case temporaryProtection = "임시보호"
+    case realTiemReport = "실시간 제보"
+    case lookingfor = "찾습니다"
+    case adoptionReview = "입양후기"
+    
+    //var localizedName: LocalizedStringKey { LocalizedStringKey(rawValue) }
 }
