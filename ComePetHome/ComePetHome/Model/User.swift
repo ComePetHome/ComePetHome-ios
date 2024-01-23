@@ -11,7 +11,6 @@ struct User: Codable {
     var userId: String
     var password: String
     var nickName: String
-    //var imageUrl: String
     var name: String
     var phoneNumber: String
 }
@@ -24,7 +23,12 @@ struct Login: Codable {
 struct SavedUser: Codable {
     var userId: String
     var nickName: String
-    var imageUrl: String
+    var name: String
+    var phoneNumber: String
+}
+
+struct PatchUser: Codable {
+    var nickName: String
     var name: String
     var phoneNumber: String
 }
