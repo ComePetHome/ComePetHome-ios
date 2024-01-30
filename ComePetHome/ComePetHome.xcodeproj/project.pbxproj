@@ -59,6 +59,7 @@
 		E4E3D6FD2B5136FD003648FF /* ArticlePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3D6FC2B5136FD003648FF /* ArticlePostView.swift */; };
 		E4E3D6FF2B5A37F4003648FF /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3D6FE2B5A37F4003648FF /* ImageFile.swift */; };
 		E4E3D7012B5E542D003648FF /* ImagesPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3D7002B5E542D003648FF /* ImagesPicker.swift */; };
+		E4E3D7032B6781A0003648FF /* SignUpResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3D7022B6781A0003648FF /* SignUpResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		E4E3D6FC2B5136FD003648FF /* ArticlePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePostView.swift; sourceTree = "<group>"; };
 		E4E3D6FE2B5A37F4003648FF /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
 		E4E3D7002B5E542D003648FF /* ImagesPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesPicker.swift; sourceTree = "<group>"; };
+		E4E3D7022B6781A0003648FF /* SignUpResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				E418D4B22B4C10B700C4ADC5 /* SignUpNicknameView.swift */,
 				E418D4B42B4C10D700C4ADC5 /* SignUpNameView.swift */,
 				E418D4B62B4C10FE00C4ADC5 /* SignUpPhonenumView.swift */,
+				E4E3D7022B6781A0003648FF /* SignUpResultView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				E418D4B32B4C10B700C4ADC5 /* SignUpNicknameView.swift in Sources */,
 				E4700D5C2B3AB129003DB586 /* Font+.swift in Sources */,
 				E4700D242B3AAE34003DB586 /* HomeView.swift in Sources */,
+				E4E3D7032B6781A0003648FF /* SignUpResultView.swift in Sources */,
 				E418D4AD2B4C106000C4ADC5 /* LogInView.swift in Sources */,
 				E4700D222B3AAE34003DB586 /* ComePetHomeApp.swift in Sources */,
 				E465DF502B44FAD300D89E1F /* AnimalFreeView.swift in Sources */,
