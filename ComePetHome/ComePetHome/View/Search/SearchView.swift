@@ -24,9 +24,9 @@ struct SearchView: View {
                         LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
                             ForEach(petViewModel.searchedPets, id: \.pet_id) { pet in
                                 NavigationLink {
-                                    AnimalDetailView(animalName: pet.name, animalBreeds: pet.breeds, animalAge:pet.age, isLike: pet.like)
+                                    AnimalDetailView(petThumbnail: petViewModel.petAppendDetail[pet]?.thumbnail_url ?? "" , petID: pet.pet_id, animalName: pet.name, animalSpecies: petViewModel.petAppendDetail[pet]?.species ?? "", animalBreeds: pet.breeds, animalAge:pet.age, petWeight: petViewModel.petAppendDetail[pet]?.weight ?? 0.0, isLike: pet.like, introContents: petViewModel.petAppendDetail[pet]?.intro_contents ?? "")
                                 } label: {
-                                    AnimalFreeView(animalName: pet.name, animalAge: pet.age, animalSex: pet.sex, animalCenter: pet.center, isLike: pet.like)
+                                    AnimalFreeView(petDetail: petViewModel.petAppendDetail[pet]?.thumbnail_url ?? "", petID: pet.pet_id, animalName: pet.name, animalAge: pet.age, animalSex: pet.sex, animalCenter: pet.center, isLike: pet.like)
                                         .clipShape(RoundedRectangle(cornerRadius: 14))
                                 }
                             }
