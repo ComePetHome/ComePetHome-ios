@@ -22,6 +22,9 @@ class PetViewModel: ObservableObject {
             return
         }
         var request = URLRequest(url: url)
+        //guard let authToken = UserDefaults.standard.string(forKey: "AuthToken") else { return } 
+        
+        //request.addValue("\(authToken)", forHTTPHeaderField: "access-token")
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "accept")
         //request.addValue("speed", forHTTPHeaderField: "userId")
